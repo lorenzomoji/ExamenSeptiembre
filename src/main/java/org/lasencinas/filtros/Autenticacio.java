@@ -9,8 +9,8 @@ public class Autenticacio implements Filtro {
         
     }
     
-    public void execucio(String autenticacio) {
-        
+    public void execucio(String peticio) {
+        System.out.print("Autenticacion OK para " + peticio + "\n");
     }
     
 }

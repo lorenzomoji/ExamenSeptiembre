@@ -2,6 +2,7 @@ package org.lasencinas.app;
 
 import org.lasencinas.filtros.Autenticacio;
 import org.lasencinas.filtros.Autoritzacio;
+import org.lasencinas.mollapp.Mollapp;
 import org.lasencinas.programador.ProgramadorTasques;
 import org.lasencinas.vehiculo.Vehiculo;
 
@@ -22,14 +23,15 @@ public final class App {
          */
         programadorTasques.setTasca(new Autenticacio());
         programadorTasques.setTasca(new Autoritzacio());
+        programadorTasques.executarTasques("Francesc");
 
         /**
          * Configuració de l'app client per a que
          * executi les tasques programades i
          * enviï el misstage al sistema.
          */
-//        Mollapp mollapp = new Mollapp();
-//        mollapp.setProgramadorTasques(programadorTasques);
-//        mollapp.enviarPeticio("Francesc");
+        Mollapp mollapp = new Mollapp();
+        mollapp.setProgramadorTasques(programadorTasques);
+        mollapp.enviarPeticio("Francesc");
     }
 }

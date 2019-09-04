@@ -3,6 +3,8 @@ package org.lasencinas.tasques;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.lasencinas.filtros.Autenticacio;
+import org.lasencinas.filtros.Autoritzacio;
 import org.lasencinas.interfaces.Filtro;
 import org.lasencinas.interfaces.Target;
 
@@ -25,11 +27,13 @@ public class Tasques {
     
     
     public void afegirTasca(Filtro filtro) {
-        
+        this.tasques.add(filtro);
     }
     
     public void execucio() {
-        
+        for(int i = 0; i < tasques.size() - 1; i++) {
+            System.out.println("Tasca " + i + 1 + tasques.get(i));
+        }
     }
 
     public Target getTarget() {
