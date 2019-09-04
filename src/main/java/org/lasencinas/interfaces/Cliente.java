@@ -1,6 +1,8 @@
 
 package org.lasencinas.interfaces;
 
+import org.lasencinas.programador.ProgramadorTasques;
+
 
 public interface Cliente {
     

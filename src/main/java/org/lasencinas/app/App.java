@@ -1,5 +1,7 @@
 package org.lasencinas.app;
 
+import org.lasencinas.filtros.Autenticacio;
+import org.lasencinas.filtros.Autoritzacio;
 import org.lasencinas.programador.ProgramadorTasques;
 import org.lasencinas.vehiculo.Vehiculo;
 
@@ -18,8 +20,8 @@ public final class App {
          * Afegir al sistema les tasques que volem que el sistema
          * executi al rebre la petició del client.
          */
-//        programadorTasques.setTasca(new Autenticacio());
-//        programadorTasques.setTasca(new Autoritzacio());
+        programadorTasques.setTasca(new Autenticacio());
+        programadorTasques.setTasca(new Autoritzacio());
 
         /**
          * Configuració de l'app client per a que
